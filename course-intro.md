@@ -11,3 +11,4 @@
 10. Helm Package Manager
 11. Volume - Persistence data in kubernetes
 12. k8s Statefulset - Deploying stateful apps 
+13. k8s - service
