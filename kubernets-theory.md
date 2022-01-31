@@ -35,6 +35,7 @@ Namespaces provide a scope for names. Names of resources need to be unique withi
         pod purpose to run one application container at time 
         
         
+        
 # kubernetes network
 
    1. kubernetes offer virtual network which means each pod get own ip address 
@@ -73,6 +74,15 @@ A ConfigMap allows you to decouple environment-specific configuration from your 
  3. if pod restarted all data get persisted 
  4. think storage is a external hardrive plugin in kubernetes cluster 
  5. if kubernetes doesn't manage persistence data as administrator we will responisble for backing data and replicate data
+
+
+# ReplicaSet
+
+A ReplicaSet's purpose is to maintain a stable set of replica Pods running at any given time. As such, it is often used to guarantee the availability of a specified number of identical Pods     
+
+# When to use a ReplicaSet
+
+A ReplicaSet ensures that a specified number of pod replicas are running at any given time. However, a Deployment is a higher-level concept that manages ReplicaSets and provides declarative updates to Pods along with a lot of other useful features. Therefore, we recommend using Deployments instead of directly using ReplicaSets, unless you require custom update orchestration or don't require updates at all.
 
 
     
