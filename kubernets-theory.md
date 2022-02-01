@@ -123,6 +123,14 @@ A ReplicaSet ensures that a specified number of pod replicas are running at any 
 
 4. A stateless app is an application program that does not save client data generated in one session for use in the next session with that client. In contrast, a stateful application saves data about each client session and uses that data the next time the client makes a request.
 
+# What is the difference between StatefulSet and deployment
+
+Deployment is a resource to deploy a stateless application, if using a PVC, all replicas will be using the same Volume and none of it will have its own state. Statefulsets is used for Stateful applications, each replica of the pod will have its own state, and will be using its own Volume.
+ 
+# What is DaemonSet
+DaemonSet. A DaemonSet ensures that all (or some) Nodes run a copy of a Pod. As nodes are added to the cluster, Pods are added to them. As nodes are removed from the cluster, those Pods are garbage collected. running a cluster storage daemon, such as glusterd , ceph , on each node.
+
+
 
 
 
