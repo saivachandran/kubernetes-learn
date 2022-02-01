@@ -111,6 +111,21 @@ A ReplicaSet ensures that a specified number of pod replicas are running at any 
  * stateful for stateful apps or database 
 
 
+# What is stateful and stateless in Kubernetes
+
+   
+1. Stateful vs Stateless Applications on Kubernetes. A stateless application is one which depends on no persistent storage. The only thing your cluster is responsible for is the code, and other static content, being hosted on it. That's it, no changing databases, no writes and no left over files when the pod is deleted.
+
+
+2. Stateful applications save data to persistent disk storage for use by the server, by clients, and by other applications. An example of a stateful application is a database or key-value store to which data is saved and retrieved by other applications
+
+3. One may also ask, what is a stateless container? Stateless Container. The stateless container manages stateless session beans, which, by definition, do not carry client-specific states. All session beans (of a particular type) are considered equal. A stateless session bean container uses a bean pool to service requests.
+
+4. A stateless app is an application program that does not save client data generated in one session for use in the next session with that client. In contrast, a stateful application saves data about each client session and uses that data the next time the client makes a request.
+
+
+
+
 
 
 
