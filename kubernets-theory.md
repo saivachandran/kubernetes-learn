@@ -85,6 +85,39 @@ A ReplicaSet's purpose is to maintain a stable set of replica Pods running at an
 A ReplicaSet ensures that a specified number of pod replicas are running at any given time. However, a Deployment is a higher-level concept that manages ReplicaSets and provides declarative updates to Pods along with a lot of other useful features. Therefore, we recommend using Deployments instead of directly using ReplicaSets, unless you require custom update orchestration or don't require updates at all.
 
 
+ 1. we are replicating single pod into multiple nodes it also connected to service
+ 2. service has two functionalites permanent static ip with dnsname 
+ 3. service also has loadbalancer, service cache the request forward which pod is available
+
+# deployment
+
+ 1.  if you want to replicate pod, you won't create new pod, you just define number of replicas in declerative deployment file, deployment maintain the desire number of replicas always run at given time     
+ 2.  you can scaleup and scaledown as number of replicas you need
+ 3.  pod is layer of abtraction on top the container
+ 4.  Deployment another abtraction layer of pod
+ 5.  now one of the pod is die, service forward request to another pod
+ 6.  database can't be replicate using deployment reason for that database is data 
+ 7.  we need to clone database, require shared storage and to define 
+ 8.  which one write and which one read to avoid data inconsistence
+ 9.  that machanism offered by statefulset
+
+
+# statefulset
+
+  1. this component mainly used to replicate database
+  2. mysql, mongodb,  elasticsearch
+  
+ * deployment for stateless application 
+ * stateful fo stateful apps or database 
+
+
+
+
+
+
+ 
+
+
     
 
 
