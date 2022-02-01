@@ -108,7 +108,7 @@ A ReplicaSet ensures that a specified number of pod replicas are running at any 
   2. mysql, mongodb,  elasticsearch
   
  * deployment for stateless application 
- * stateful fo stateful apps or database 
+ * stateful for stateful apps or database 
 
 
 
