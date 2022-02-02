@@ -109,6 +109,20 @@ A ReplicaSet ensures that a specified number of pod replicas are running at any 
   
  * deployment for stateless application 
  * stateful for stateful apps or database 
+ * Db are often used outside kubernetes cluster
+ * we have two replicas for application and database incase one both pods rebooted are crashed still app and db accessible by another node untill two relicas recreated
+
+
+# main kubernetes component
+
+ 1. pod is a abraction layer of container
+ 2. service - for kubbernetes resource communication we are using service
+ 3. ingress controller - route the traffic into cluster
+ 4. configmap - external configution using configmap
+ 5. secrets
+ 6. volume - for data persistence
+ 7. Deployments - pod blueprint with replicating mechanism 
+ 8. statefulsets
 
 
 # What is stateful and stateless in Kubernetes
