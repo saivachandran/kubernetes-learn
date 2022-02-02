@@ -122,7 +122,8 @@ A ReplicaSet ensures that a specified number of pod replicas are running at any 
  5. secrets
  6. volume - for data persistence
  7. Deployments - pod blueprint with replicating mechanism 
- 8. statefulsets
+ 8. statefulset - stateful application specifically like database
+ 9. yes kubernetes offered lot of compontents
 
 
 # What is stateful and stateless in Kubernetes
