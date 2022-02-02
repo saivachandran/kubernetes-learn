@@ -126,6 +126,58 @@ A ReplicaSet ensures that a specified number of pod replicas are running at any 
  9. yes kubernetes offered lot of compontents
 
 
+# kubernetes Architecture  
+
+  1. we are going to look two types of master and worker nodes 
+
+# worker machines in kubernetes cluster
+
+  1. each node has multiple pod on it
+  2. 3 process must be installed on every node, node is cluster service actaully do the work
+
+        * first process need to run every node is container runtime, my example docker you can use anyone
+        * Application pod container run inside process those schedule container is kubelet 
+        * kubelet is a process itself in cluster, kubelet interact with both container and node
+        * kubelet start the pod with container inside
+        * usually kubernetes cluster made with multiple nodes it also must have container runtime and kubelet service
+        * second process is service has loadbalancer cache the service and forwared to pod 
+        * third process is forward request service to pod is kube proxy, kube proxy must be installed every node
+
+      
+ # how to interact with cluster 
+ 
+       How to 
+       
+          1. schedule a pod
+          2. monitor pod
+          3. re-schedule/restart pod
+          4.  Join a new node
+          
+  # managing process done master node in kubernetes  
+  
+     * four process done by every master node to control cluster node and worker node
+     
+         1. Api server
+         
+              when as user you want deploy a application run as a client
+              Api server like a gateway of a cluster, interact with cluster using client like cli tool kubelet or api, it's get inital request like update or    eventhough query  from client 
+              
+              Act as a gatekeeper for authendication 
+              
+              some request example pod creation  -> Api server -> validate request ->  other process -> kubelet - schedule pod
+              
+         2. scheduler
+         
+            schedule a new pod -> Api server -> scheduler -> place the pod to node
+            
+            scheduler decide which specific pod have to place, first look request check how much resource application need schedule a pod 
+            
+            scheduler just decide which pod goes to which node, process actually does the scheduling is kueblet.
+    
+
+
+
+
 # What is stateful and stateless in Kubernetes
 
    
