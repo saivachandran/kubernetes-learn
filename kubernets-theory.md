@@ -213,6 +213,19 @@ Deployment is a resource to deploy a stateless application, if using a PVC, all 
 DaemonSet. A DaemonSet ensures that all (or some) Nodes run a copy of a Pod. As nodes are added to the cluster, Pods are added to them. As nodes are removed from the cluster, those Pods are garbage collected. running a cluster storage daemon, such as glusterd , ceph , on each node.
 
 
+# what is minikube and kubectl how to set up
+
+     in a production setup we go with multmaster and multi worker node with kubeadm
+     
+     in a test local enviroment we go with minikube
+     
+     minikube is a single node cluster both master process and worker process run on single node, node docker container runtime pre installed.
+     
+# kubectl
+
+   kubectl is a commandline tool interact with kubernetes cluster create and delete,update manage pods 
+
+
 
 
 
