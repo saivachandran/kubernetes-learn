@@ -126,7 +126,10 @@ A ReplicaSet ensures that a specified number of pod replicas are running at any 
  9. yes kubernetes offered lot of compontents
 
 
-# kubernetes Architecture  
+# kubernetes Architecture
+
+![image](https://user-images.githubusercontent.com/42309948/152154355-bce4bae7-0b32-4d4b-b1c0-39631a21d359.png)
+
 
   1. we are going to look two types of master and worker nodes 
 
@@ -189,9 +192,6 @@ A ReplicaSet ensures that a specified number of pod replicas are running at any 
             Etcd store must be relaible store are replicated , kubernetes usually made multiple masters , apcourse api server act as load balancer etcd replicated across master
              
     
-
-
-
 
 # What is stateful and stateless in Kubernetes
 
