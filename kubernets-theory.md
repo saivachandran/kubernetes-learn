@@ -173,6 +173,21 @@ A ReplicaSet ensures that a specified number of pod replicas are running at any 
             scheduler decide which specific pod have to place, first look request check how much resource application need schedule a pod 
             
             scheduler just decide which pod goes to which node, process actually does the scheduling is kueblet.
+            
+         3. controller manager
+         
+             pod dies any node controller manger detects state changes like crashes , try to recover pod state asap for this controller manager make the request to scheduler to recreate pod
+             
+         4. Etcd 
+         
+            Etcd is a key value store of the cluster state,  Etcd is a cluster brain, cluster changed store in etcd key value store, example pod creatred or pod dies all details store 
+            
+            all contiller manager scheduler works because of  data 
+            
+            Application data not stored in etcd key value store
+            
+            Etcd store must be relaible store are replicated , kubernetes usually made multiple masters , apcourse api server act as load balancer etcd replicated across master
+             
     
 
 
