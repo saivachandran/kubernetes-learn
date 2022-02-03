@@ -20,4 +20,4 @@ minikube config set driver docker
 minikube delete
 
 minikube start
-:
+
