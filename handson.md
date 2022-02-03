@@ -27,3 +27,5 @@
       kubectl get pods
       
       kubectl get replicaset
+      
+      
