@@ -224,6 +224,19 @@ DaemonSet. A DaemonSet ensures that all (or some) Nodes run a copy of a Pod. As 
 # kubectl
 
    kubectl is a commandline tool interact with kubernetes cluster create and delete,update manage pods 
+   
+   
+   
+ # layer of abstraction
+ 
+      Deployment manages replicaset
+      
+      Replicaset manages pod
+      
+      pod abstraction lyaer of container
+      
+      every below deployment handled by kubernetes      
+   
 
 
 
