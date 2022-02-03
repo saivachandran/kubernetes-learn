@@ -6,4 +6,6 @@
 
        sudo kubectl get nodes
        
-       
+# check kubectl version
+
+      kubectl version
