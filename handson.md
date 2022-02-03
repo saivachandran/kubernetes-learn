@@ -53,6 +53,23 @@
         kubectl delete deployment mongo-depl
         
         
+ # create deployment using declerative format
+ 
+ 
+          kubectl apply -f nginx.yml
+          
+  edit configuration file and change to number of replicas to 2
+  
+  
+         kubectl apply -f nginx.yml
+         
+         kubectl get replicaset
+  
+  
+   
+   
+           
+        
  
          
        
