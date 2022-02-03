@@ -64,6 +64,12 @@
          kubectl apply -f nginx.yml
          
          kubectl get replicaset
+         
+# Delete with configuration file 
+
+       kubectl delete -f ngnix.yml
+      
+      
   
   
    
