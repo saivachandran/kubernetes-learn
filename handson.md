@@ -28,4 +28,43 @@
       
       kubectl get replicaset
       
+# update the image version 
+
+
+       kubectl edit deployment nginx-depl
+      
+ search image change image:nginx to image:nginx1.16
+      
+ save configuration file  
+ 
+# debugging pods
+
+      kubectl logs mongo-depl-85ddc6d66-cmg2f
+      
+      kubectl describe pod mongo-depl-85ddc6d66-cmg2f
+      
+      
+ # Get terminal of mongodb application
+ 
+         kubectl exec -it mongo-depl-85ddc6d66-cmg2f -- /bin/bash
+         
+ # Delete deployment 
+ 
+        kubectl delete deployment mongo-depl
+        
+        
+ 
+         
+       
+       
+ 
+       
+ 
+ 
+
+       
+
+
+ 
+      
       
