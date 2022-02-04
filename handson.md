@@ -79,6 +79,21 @@
      status data fetch from etcd, etcd store the curent state of k8s component
      
      
+ # yaml configuration file
+ 
+       human friendly data serialization standard for all programming language
+       
+       syntax strict indentation
+       
+       store the config files with your code or github
+       
+       template is a blueprint for pod
+       
+       connection established using labels and selector
+       
+       
+     
+     
      
       
       
