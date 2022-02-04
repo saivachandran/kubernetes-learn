@@ -92,6 +92,45 @@
        connection established using labels and selector
        
        
+ # create deployment with service
+ 
+       kubectl apply -f ngnix.yml 
+       kubectl apply -f service.yml
+       
+# get deployment with yaml file format
+
+       kubectl get deployment nginx -o yaml > nginx-deployment-result.yaml
+       
+       
+# view service end points
+
+        kubectl describe service deploymnt-web-server-service
+        
+# view pod ip address
+
+
+      kubectl get pod -o wide
+     
+# get replicaset
+
+       kubectl get replicaset
+       
+# get service
+
+       kubectl get service
+       
+     
+
+    
+        
+# delete deployment and service using file
+
+       kubectl delete -f ngnix.yml
+       kubectl delete -f service.yml 
+
+
+       
+       
      
      
      
