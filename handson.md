@@ -74,7 +74,12 @@
 
      1. Metadata
      2. specification
-     3.status
+     3. status - match desired state with actual state 
+     
+     status data fetch from etcd, etcd store the curent state of k8s component
+     
+     
+     
       
       
   
