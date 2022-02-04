@@ -1,12 +1,9 @@
 # mongodb deployment
 
-Requirement
-----------
-
-2 Deployment/pod
-2 service
-1 configmap
-1 secret
+1. 2 Deployment/pod
+2. 2 service
+3. 1 configmap
+4. 1 secret
 
 # steps
 
@@ -31,6 +28,8 @@ Requirement
 
 # browser rquest flow throuh the k8s components
 
-browser-mongo-express --> mongo-external-service -->  mongo-express-pod --> Mongdb-internal-service--> mongodb-service
+![mongodb-app-flow](https://user-images.githubusercontent.com/42309948/152550656-c05ecbcf-a751-4332-b085-ed383c6eee38.png)
+
+
 
   
