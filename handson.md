@@ -68,6 +68,13 @@
 # Delete with configuration file 
 
        kubectl delete -f ngnix.yml
+       
+       
+# Each configuration files has 3 parts
+
+     1. Metadata
+     2. specification
+     3.status
       
       
   
