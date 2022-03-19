@@ -28,7 +28,7 @@ Namespaces provide a scope for names. Names of resources need to be unique withi
 
         Basic unit in kubernets is a pod, pod is smallest unit in kubernetes  
         
-        pod is abstraction over a container
+        pod is abstraction layer over a container
         
         pod is create running enviroment or create layer on top of the container
         
