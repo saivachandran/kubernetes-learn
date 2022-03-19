@@ -24,7 +24,7 @@ Namespaces provide a scope for names. Names of resources need to be unique withi
 
        simple server physical or virtual machine
        
-    * pod
+# pod
 
         Basic unit in kubernets is a pod, pod is smallest unit in kubernetes  
         
@@ -33,6 +33,10 @@ Namespaces provide a scope for names. Names of resources need to be unique withi
         pod is create running enviroment or create layer on top of the container
         
         pod purpose to run one application container at time 
+        
+        Each pod get it's own ip address
+        
+        pod get new ip address when pod dies and recreated
         
         
         
