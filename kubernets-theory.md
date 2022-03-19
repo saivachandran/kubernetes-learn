@@ -57,8 +57,22 @@ Namespaces provide a scope for names. Names of resources need to be unique withi
   3. if you want to access your application throuh bowser 
   4. we need to create external service and you don't want to expose your database outside for this you will create internal service
   5. if you wnat to access your url with secure domain name url, kubernetes offer another component called ingress
+  6. pod can communicate each other using service
+
+
+# ingress
+
+An API object that manages external access to the services in a cluster, typically HTTP.
+
+Ingress may provide load balancing, SSL termination and name-based virtual hosting.
+
+![image](https://user-images.githubusercontent.com/42309948/159120016-e7df6f81-9936-4f2e-91ca-42508da5d7c0.png)
+
+
 
 # ConfigMaps
+
+configMap used for External configuration of your application
 
 A ConfigMap is an API object used to store non-confidential data in key-value pairs. Pods can consume ConfigMaps as environment variables, command-line arguments, or as configuration files in a volume.
 
