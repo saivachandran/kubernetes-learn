@@ -84,8 +84,12 @@ A ConfigMap allows you to decouple environment-specific configuration from your 
  1. secret just like configmap but store secret base64 encoded format
  2. use as a enviroment variable or property file
  
-# volumes
+# volumes (data storage)
 
+ pod get restarted data is gone, you want to persist your database data and log, using volumes you can persist your data
+ 
+ how volumes works attache physical drive into pods, it could be local storage, remote storage,cloud storage
+ 
 
  1. how it's work attach a physical storage to pod 
  2. storage either local machine or remote server or outside the kubernets cluster it could be cloud 
