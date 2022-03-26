@@ -207,7 +207,7 @@ A ReplicaSet ensures that a specified number of pod replicas are running at any 
          
             Etcd is a key value store of the cluster state,  Etcd is a cluster brain, cluster changed store in etcd key value store, example pod creatred or pod dies all details store 
             
-            all contiller manager scheduler works because of  data 
+            all controller manager scheduler works because of  data 
             
             Application data not stored in etcd key value store
             
