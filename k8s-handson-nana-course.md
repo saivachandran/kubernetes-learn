@@ -32,3 +32,15 @@ kubectl get nodes
 ```
 kubectl version
 ```
+# view status of the pod
+```
+kubectl get pods
+```
+
+# view services in kubernetes
+```
+kubectl get services
+```
+
+
+
