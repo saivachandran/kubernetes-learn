@@ -49,5 +49,8 @@ kubectl create deployment nginx-deply --image=nginx
 ```
 kubectl get deployment
 ```
-
+# view replicaset
+```
+kubectl get replicaset
+```
 
