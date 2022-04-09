@@ -18,4 +18,12 @@ minikube start --driver=docker
 minikube config set driver docker
 
 ```
-     
+# view minikube status
+
+```
+minikube status
+```
+# view node status on minikube
+```
+kubectl get nodes
+```
