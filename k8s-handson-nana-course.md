@@ -27,3 +27,8 @@ minikube status
 ```
 kubectl get nodes
 ```
+
+# view kubernetes version
+```
+kubectl version
+```
