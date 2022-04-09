@@ -260,6 +260,28 @@ DaemonSet. A DaemonSet ensures that all (or some) Nodes run a copy of a Pod. As 
       every below deployment handled by kubernetes      
    
 
+# Example cluster setup
+
+![image](https://user-images.githubusercontent.com/42309948/162559246-2d3caa71-6c8a-4703-8ba4-831508f85697.png)
+
+* Matser node uses less resources
+* worker node actaully run all pods it's uses more resources
+
+# minikube setup
+
+* production setup we need alteast two master and three worker node
+
+* minikube single node cluster both master and worker node run on same node
+* node will have docker container runtime preinstalled
+* minikube 1 node k8s cluster runs at virtual box
+
+
+# kubectl is commandline tools for kubernetes cluster
+
+Remeber run both master and worker process, Api server main entrypoint in kubernetes cluster
+
+talk with api server ui or ap or cli
+
 
 
 
