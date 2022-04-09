@@ -41,6 +41,13 @@ kubectl get pods
 ```
 kubectl get services
 ```
-
+# create deployment in kubernetes
+```
+kubectl create deployment nginx-deply --image=nginx
+```
+# view deployment
+```
+kubectl get deployment
+```
 
 
