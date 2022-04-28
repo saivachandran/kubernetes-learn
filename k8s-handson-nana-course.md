@@ -63,5 +63,15 @@ kubectl get pod
 kubectl edit deployment nginx-deploy
 ```
 
-
-
+# view logs of container
+```
+kubectl get pods
+```
+```
+NAME                            READY   STATUS              RESTARTS   AGE
+mongo-deploy-69cbc9dbf8-ncgjt   0/1     ContainerCreating   0          47s
+nginx-deploy-665b89fb4b-hf8l2   1/1     Running             0          13m
+```
+```
+kubectl logs mongo-deploy-69cbc9dbf8-ncgjt
+``
