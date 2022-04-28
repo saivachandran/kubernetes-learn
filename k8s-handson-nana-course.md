@@ -85,3 +85,9 @@ kubectl describe pod mongo-deploy-69cbc9dbf8-ncgjt
 kubectl exec -it mongo-deploy-69cbc9dbf8-ncgjt -- /bin/bash
 ```
 
+# Delete Deployment
+```
+kubectl delete deployment mongo-deploy
+```
+
+
