@@ -283,6 +283,14 @@ Remeber run both master and worker process, Api server main entrypoint in kubern
 talk with api server ui or ap or cli
 
 
+# layer of abstarction
+
+1. Deployment manages replicaset
+2. replicaset manages replicas of pod
+3. pod abstarction layer of container
+
+Everything below the deployment kubernetes automatically manages
+
 
 
 
