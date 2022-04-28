@@ -53,4 +53,10 @@ kubectl get deployment
 ```
 kubectl get replicaset
 ```
+# view pod
+
+```
+kubectl get pod
+```
+
 
