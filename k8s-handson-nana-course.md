@@ -80,3 +80,8 @@ kubectl logs mongo-deploy-69cbc9dbf8-ncgjt
 kubectl describe pod mongo-deploy-69cbc9dbf8-ncgjt
 ```
 
+# login container in kubernetes
+```
+kubectl exec -it mongo-deploy-69cbc9dbf8-ncgjt -- /bin/bash
+```
+
