@@ -58,5 +58,10 @@ kubectl get replicaset
 ```
 kubectl get pod
 ```
+# edit deployment change image version
+```
+kubectl edit deployment nginx-deploy
+```
+
 
 
