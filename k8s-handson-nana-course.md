@@ -139,3 +139,7 @@ kubectl apply -f nginx-deployment.yml
 ```
 kubectl delete deployment mongo-deploy
 ```
+# get info about pod
+```
+kubectl describe pod mongo-deploy-69cbc9dbf8-ncgjt
+```
