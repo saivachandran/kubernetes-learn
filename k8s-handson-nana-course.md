@@ -90,4 +90,11 @@ kubectl exec -it mongo-deploy-69cbc9dbf8-ncgjt -- /bin/bash
 kubectl delete deployment mongo-deploy
 ```
 
+# kubectl apply command using configuration apply
 
+```
+apply works both creates and update function
+```
+```
+ kubectl apply -f nginx-deployment.yml
+```
