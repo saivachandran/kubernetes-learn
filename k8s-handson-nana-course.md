@@ -98,3 +98,30 @@ apply works both creates and update function
 ```
  kubectl apply -f nginx-deployment.yml
 ```
+
+## crud commands
+
+# create deployment
+```
+kubectl create deployment nginx-deply --image=nginx 
+```
+
+# Edit deployment
+```
+kubectl edit deployment nginx-deploy
+```
+
+# delete deployment
+
+```
+kubectl delete deployment mongo-deploy
+```
+
+# status of different k8s component
+```
+kubectl get nodes | pod | services | replicaset | deployment
+```
+# debugging pods
+```
+kubectl logs mongo-deploy-69cbc9dbf8-ncgjt
+```
