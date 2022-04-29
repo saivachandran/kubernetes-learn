@@ -125,3 +125,17 @@ kubectl get nodes | pod | services | replicaset | deployment
 ```
 kubectl logs mongo-deploy-69cbc9dbf8-ncgjt
 ```
+# get interactive terminal
+```
+kubectl exec -it mongo-deploy-69cbc9dbf8-ncgjt -- /bin/bash
+```
+
+# apply a configuration file
+
+```
+kubectl apply -f nginx-deployment.yml
+```
+# delete configuration file
+```
+kubectl delete deployment mongo-deploy
+```
