@@ -292,6 +292,10 @@ talk with api server ui or ap or cli
 Everything below the deployment kubernetes automatically manages
 
 
+# variables in python
+
+variables are used to store values
+
 
 
 
