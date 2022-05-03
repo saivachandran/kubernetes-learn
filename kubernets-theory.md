@@ -297,6 +297,17 @@ Everything below the deployment kubernetes automatically manages
 variables are used to store values
 
 
+# kubernets yaml configuration
+
+ 1. metadata
+ 2. specification
+ 3. status
+
+# connections for yaml file
+
+1. way connection esatbilished in k8s using labels and selector  
+
+
 
 
 
