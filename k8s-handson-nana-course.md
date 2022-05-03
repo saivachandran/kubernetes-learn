@@ -143,5 +143,9 @@ kubectl delete deployment mongo-deploy
 ```
 kubectl describe pod mongo-deploy-69cbc9dbf8-ncgjt
 ```
-# k8s yaml configuration file
+# get updated status of deployment in yaml file
+```
+kubectl get deployments.apps nginx-deployment -o yaml > nginx-deployment-result.yml
+
+```
 
