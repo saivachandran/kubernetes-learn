@@ -148,4 +148,9 @@ kubectl describe pod mongo-deploy-69cbc9dbf8-ncgjt
 kubectl get deployments.apps nginx-deployment -o yaml > nginx-deployment-result.yml
 
 ```
+# Brower request for Mongodb application
+
+![image](https://user-images.githubusercontent.com/42309948/167775140-057a262f-070a-4101-9619-88e796097d28.png)
+
+
 
