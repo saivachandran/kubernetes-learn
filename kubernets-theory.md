@@ -309,11 +309,47 @@ variables are used to store values
 
 
 
+# Namespace
 
+1. organise your resources using namespaces
 
+2. virtual cluster inside a cluster 
 
+```
+kubectl get namespace
 
- 
+NAME              STATUS   AGE
+default           Active   1d
+kube-node-lease   Active   1d
+kube-public       Active   1d
+kube-system       Active   1d
+```
+
+```
+    default The default namespace for objects with no other namespace
+    kube-system The namespace for objects created by the Kubernetes system
+    kube-public This namespace is created automatically and is readable by all users (including those not authenticated). This namespace is mostly reserved for cluster usage, in case that some resources should be visible and readable publicly throughout the whole cluster. The public aspect of this namespace is only a convention, not a requirement.
+    kube-node-lease This namespace holds Lease objects associated with each node. Node leases allow the kubelet to send heartbeats so that the control plane can detect node failure.
+
+```
+
+3. Always good idea group your resources in namespaces
+
+4. per namesapce we can define resource quota
+
+# namespace usecases
+
+1. structure your components
+
+2. Avoid conflict between teams
+
+3. share services diffrent Enviroment
+
+4. Access and resource limits on namespace level
+
+5. you can't access most resources from another namespaces
+
+6. volume and node it's globally accessible not within namespace 
 
 
     
