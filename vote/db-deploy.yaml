@@ -20,10 +20,16 @@ spec:
     spec:
       containers:
       - image: postgres:9.4
-        imagePullPolicy: Always
         env:
-            - name: POSTGRES_PASSWORD
-              value: "Saiva@09"
+          - name: POSTGRES_USER
+            value: "postgres"
+          - name:  POSTGRES_PASSWORD
+            value: "postgres"
+          - name: POSTGRES_HOST_AUTH_METHOD
+            value: trust
+ 
+        imagePullPolicy: Always
+        
         name: db
         ports:
         - containerPort: 5432
